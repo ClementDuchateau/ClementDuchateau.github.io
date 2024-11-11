@@ -9,15 +9,31 @@ h1{
 h2{
     font-size: 2.5em;
 }
-h1,h2{
+.headercolor h1,.headercolor h2 {
     color: #EDF2F4;
 }
-header, footer, education{
+header, footer, .education{
     padding: 30px;
 }
 header, footer{
     background-color: #2B2D42;
+    color: #8D99AE;
 }
-.links{
+.education {
+background-color: #8D99AE;
+}
+a{
     color: #EF233C;
+}
+header{
+    margin-bottom: 10px;
+}
+footer{
+    margin-top: 10px;
+}
+html{
+    background-color: #2B2D42;
+}
+body{
+    background-color: white;
 }
