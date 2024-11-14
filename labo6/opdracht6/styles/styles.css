@@ -1,4 +1,4 @@
-.checklist .checked{
+/*.checklist .checked{
     display: inline-block;
     padding-left: 20px;
     background-image: url("../images/89f4a0e49b053ebacda0202455c5df94.png");
@@ -13,4 +13,10 @@
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: left center;
+}*/
+.checklist .checked{
+    list-style-image: url("../images/89f4a0e49b053ebacda0202455c5df94.jpg");
+}
+.checklist li{
+    list-style-image: url("../images/checkbox-unchecked-svgrepo.png");
 }
