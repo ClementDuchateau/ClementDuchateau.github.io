@@ -1,0 +1,65 @@
+body{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1b1c1c;
+    color: rebeccapurple;
+    font-family: "Copperplate-Bold", serif;
+}
+
+body > header > h1{
+    background-image: url("../images/low_poly_abstract_banner_design_2708.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 75px;
+    text-align: center;
+    font-size: 5em;
+    color: mediumpurple;
+    width: auto;
+}
+header > h2{
+    background-color: #140e17;
+    display: inline-block;
+    margin-top: auto;
+    box-shadow: 5px 5px 3px rebeccapurple;
+    position: relative;
+    left: 15%;
+    font-size: 1.8em;
+}
+section > ul{
+    position: relative;
+    left: 15%;
+    font-size: 1.2em;
+}
+.picture{
+    list-style: none;
+}
+section > ol{
+    position: relative;
+    left: 15%;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: rebeccapurple;
+    display: inline-block;
+    padding-left: 20px;
+    background-image: url("../images/—Pngtree—purple round sci fi frame_60597481.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+a:hover{
+    color: mediumpurple;
+    background-color: blueviolet;
+}
+img{
+    border-radius: 10px;
+}
+html{
+    background-image: url("../images/modern-futuristic-neon-purple-background-free-vector.jpg");
+
+}
