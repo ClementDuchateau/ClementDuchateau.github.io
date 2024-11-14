@@ -1,0 +1,25 @@
+body > section > header h1{
+    color: whitesmoke;
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
+body > section > nav{
+    padding: 5px;
+    background-color: #36454F;
+    font-size: 1.2em;
+    color: black;
+
+}
+body > section > nav > a{
+    color: palegreen;
+}
