@@ -1,0 +1,64 @@
+table{
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    border-top-style: none;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+caption{
+    border-style: solid;
+    border-color: black;
+    border-width: thick;
+    border-bottom-width: thin;
+    border-bottom-style: dotted;
+    border-bottom-color:#c8bef0;
+    font-size: 1.6em;
+    color: black;
+    background-color: #aaaac8;
+}
+thead, th{
+    border-style: dotted;
+    border-top-style: none;
+    border-width: 0.09em;
+    border-color: #c8bef0;
+    background-color: #232546;
+    color:#c8bef0;
+}
+tbody , td{
+    border-style: dotted;
+    border-width: 0.09em;
+}
+tr > td:first-child{
+    background-color: #ffdcdc;
+}
+tr > td:last-child{
+    background-color: #ffdcdc;
+}
+tr:first-child td:first-child{
+    background-color: darkgrey;
+    color: grey;
+}
+tr:last-child td:nth-child(n +4){
+    background-color: darkgray;
+    color: grey;
+}
+tr:nth-child(3) td:nth-child(3){
+    background-color: #fa7878;
+}
+tr:first-child td:nth-child(5),
+tr:first-child td:nth-child(6),
+tr:nth-child(2) td:nth-child(5),
+tr:nth-child(2) td:nth-child(4),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(3) td:nth-child(6),
+tr:nth-child(4) td:nth-child(3),
+tr:nth-child(4) td:nth-child(5)
+{
+    text-decoration: underline;
+    font-weight: bold;
+    color: mediumpurple;
+}
