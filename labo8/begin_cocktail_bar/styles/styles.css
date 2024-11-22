@@ -1,0 +1,39 @@
+body{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+body header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body > article{
+    float:right;
+    width: 30%;
+    border: 3px solid #a7cece;
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
+}
+section > article > h1, section > article > h2{
+    color: #007e7e;
+}
+section > article > h2{
+    font-size: 130%;
+}
+section > article > h3{
+    font-size: 150%;
+}
+body section article{
+    float: left;
+    width: 70%
+
+}
+body > article > h2{
+    color: red;
+}
