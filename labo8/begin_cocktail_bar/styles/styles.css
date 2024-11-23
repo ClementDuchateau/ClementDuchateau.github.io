@@ -19,6 +19,8 @@ body > article{
     text-align: center;
     padding: 2%;
     box-sizing: border-box;
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
 }
 section > article > h1, section > article > h2{
     color: #007e7e;
@@ -36,4 +38,36 @@ body section article{
 }
 body > article > h2{
     color: red;
+}
+body > article a:hover{
+    background-color: #836953;
+    text-decoration: none;
+    color: saddlebrown;
+}
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    background-color: #a7cece ;
+    color: #444444;
+    border-style: dotted;
+    border-color: white;
+    box-sizing: border-box;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    padding-left : 75px;
+    background-position: top left;
+}
+
+body > section > article > ul > li:first-child {
+    font-weight: bold;
+}
+body > section > article > ul > li >span {
+    font-style: italic;
+    font-weight: normal;
+
+}
+footer{
+    clear: both;
+    font-size: 50%;
+    text-align: center;
 }
