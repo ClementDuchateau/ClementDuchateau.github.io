@@ -1,0 +1,30 @@
+body{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+article{
+    border:solid black 1px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 1.25em;
+}
+article:nth-child(odd) > p img{
+    float: left;
+    margin: auto 10px 10px 10px;
+}
+article:nth-child(odd) > p{
+    overflow: hidden;
+    vertical-align: middle;
+}
+article:nth-child(even) > p img{
+    float: right;
+    margin: auto 10px 10px 10px;
+}
+article:nth-child(even) > p{
+    float: right;
+    margin: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
