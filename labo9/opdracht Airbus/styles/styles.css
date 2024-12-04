@@ -33,11 +33,82 @@ header img{
     right: 250px;
     bottom: 60px;
 }
-.news{
+#news{
   float: right;
     width: 25%;
     background-color: #dddddd;
     border: 1px solid;
     border-color: #999999;
     box-sizing: border-box;
+}
+#news > p{
+    font-size: 90%;
+    color: #666666;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+#news > h3{
+    color: white;
+    background-color: blue;
+    text-align: center;
+    font-size: 120%;
+}
+#main {
+    box-sizing: border-box;
+    padding-right: 10px;
+    width: 75%;
+}
+section > article{
+    position: relative;
+}
+section > article > img {
+    float: left;
+    margin: 20px;
+}
+#intro{
+    margin: 20px 30px 20px 0;
+    overflow: hidden;
+
+}
+section > p > span{
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+#gallery{
+    background-color: #999999;
+}
+#gallery > div > img{
+    height: 180px;
+    width: 180px;
+}
+
+#gallery > div{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border: 1px dotted #999999;
+}
+footer{
+    clear: both;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+}
+footer > nav{
+    display: inline-block;
+    margin-left: 120px;
+}
+li > a{
+    color: white;
+}
+li > a:hover{
+    color: red;
+}
+footer > div{
+    text-align: center;
+    background-color: white;
+    color: black;
 }
