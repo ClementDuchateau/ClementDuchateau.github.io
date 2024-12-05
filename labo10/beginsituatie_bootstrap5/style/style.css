@@ -1,2 +1,15 @@
+.container{
+    max-width: 95%;
+}
+.box{
+    text-align: center;
+    height: 200px;
+    background-color: darkgrey;
+    margin-bottom: 30px;
+}
+.darkgrey{
 
+    background-color: grey;
+
+}
 
