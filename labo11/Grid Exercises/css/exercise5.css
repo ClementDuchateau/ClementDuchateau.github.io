@@ -1,5 +1,13 @@
 .container{
-
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+            'one one one'
+            'two three four'
+            'two five five'
+            'six six seven'
+            'eight eight eight'
 }
 
 .container .block{
@@ -11,26 +19,34 @@
 }
 
 .block.block1{
-
+    background-color:#b6366a;
+    grid-area: one;
  }
 .block.block2{
-
+    background-color:#726ea6;
+    grid-area: two;
 }
 .block.block3{
-
+    background-color:#7d8dc2;
+    grid-area: three;
 }
 .block.block4{
-
+    background-color:#a1d2da;
+    grid-area: four;
 }
 .block.block5{
-
+    background-color:#c392d0;
+    grid-area: five;
 }
 .block.block6{
-
+    background-color:#b6366a;
+    grid-area: six;
 }
 .block.block7{
-
+    background-color:#726ea6;
+    grid-area: seven;
 }
 .block.block8{
-
+    background-color:#7d8dc2;
+    grid-area: eight;
 }
