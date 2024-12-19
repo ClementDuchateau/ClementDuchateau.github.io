@@ -5,19 +5,29 @@ html {
 * {
     padding: 10px;
 }
+
+header, footer{
+    text-align: center;
+    color: white;
+    background:#ddaa00;
+}
 nav a{
+    background: white;
+    border: solid black 1px;
     color: #ddaa00;
     margin: 0 5px;
-}
-header, footer{
-    background:#ddaa00;
+    flex: 100%;
+    text-align: center;
+    text-decoration: none;
 }
 nav{
     background-color: #ccc;
     padding: 5px 2px;
+    display: flex;
 }
 main{
     background-color: grey;
+    display: flex;
 }
 body{
     font-size: 1em;
@@ -26,11 +36,27 @@ body{
 }
 section{
     margin: 5px;
+    flex: 100%;
+    background-color: white;
+
+}
+section > a{
+    color: black;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
 }
 h1{
     margin: 0;
 }
 img{
     padding: 0;
+}
+@media screen and (max-width: 700px){
+    main{
+        flex-wrap: wrap;
+    }
 }
 

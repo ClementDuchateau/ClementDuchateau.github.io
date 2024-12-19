@@ -1,0 +1,31 @@
+
+body {
+    background: #daeffc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: #E58B88;
+}
+header{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+li > a{
+    color: #ECBE7A;
+    text-decoration: none;
+    border: 1px solid #ECBE7A;
+    box-sizing: border-box;
+    background-color: #9DA8DD;
+    text-align: center;
+
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+li{
+    list-style: none;
+    text-align: center;
+    flex: 1;
+}
