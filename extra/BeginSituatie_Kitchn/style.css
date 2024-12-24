@@ -1,0 +1,179 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+body, body > *{
+    margin: 0;
+}
+body{
+    font-family: Helvetica, sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 1em 0 0 1em;
+    margin: 1em auto 1em;
+    border-bottom: black solid 2px;
+}
+h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+body>#header>header{
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+
+}
+#header{
+    border-bottom: #ebe8e8 solid 1px;
+}
+body>#header>header>img{
+    height: 50px;
+
+}
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+nav a{
+    font-size: 13px;
+    color: #5b4746;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0 10px;
+    border-right: #ebe8e8 solid 1px;
+    border-bottom: 2px transparent solid;
+    box-sizing: border-box;
+}
+nav a:hover{
+    border-bottom: #fff100 solid 2px;
+
+
+}
+nav a:last-child{
+    border-right: none;
+}
+main{
+    border-top: #ebe8e8 1px solid;
+}
+main>header{
+    background-image: url("images/headerimage.jpg");
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px 0 #8D99AE;
+}
+main>section{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+section >div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+section> div > .recept{
+    margin-right: 1.5em;
+    margin-top: 1em;
+    box-sizing: border-box;
+    border-top:  1px solid #dddddd;
+}
+section > div >.recept > h3{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: #ff4d56;
+}
+section > div >.recept > a{
+    text-decoration: none;
+    color: black;
+}
+section > div >.recept > p{
+    color: #666666;
+    line-height: 2;
+}
+section > div >.recept > span{
+    padding-left: 10px;
+    color: #666666;
+}
+section > div >.recept > span > span{
+    padding-right: 10px;
+    padding-left: 0;
+    border-right: #ebe8e8 solid 1px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: black;
+}
+main> article{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+article > div > div> div >img{
+    margin-bottom: 25px;
+}
+footer > #left{
+    float: left;
+    width: 50%;
+    text-align: right;
+    padding: 20px 10px 20px 0;
+    line-height: 2em;
+}
+footer > #right{
+    background-color: black;
+    color: white;
+    float: right;
+    width: 50%;
+    padding: 20px 0 20px 10px;
+    line-height: 2em;
+}
+footer{
+    border-top: #ebe8e8 solid 1px;
+}
+@media screen and (max-width: 999px){
+    body>#header>header{
+        width: 750px;
+    }
+    nav{
+        width: 750px;
+    }
+    main>section{
+        width: 750px;
+    }
+    main > article{
+        width: 750px;
+    }
+}
+@media screen and (max-width: 799px){main > header{font-size: 40px;}}
+@media screen and (max-width: 769px){
+    body>#header>header{
+        width: 600px;
+    }
+    nav{
+        width: 600px;
+    }
+    main>section{
+        width: 600px;
+    }
+    main > article{
+        width: 600px;
+    }
+}
