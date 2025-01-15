@@ -1,0 +1,71 @@
+body{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 1.2em;
+}
+.col-3{
+    float: right;
+}
+body header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body > div > article{
+    border: 3px solid #a7cece;
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
+    background-image: url("../images/cocktail.gif");
+    background-repeat: repeat-x;
+}
+section > article > h1, section > article > h2{
+    color: #007e7e;
+}
+section > article > h2{
+    font-size: 130%;
+}
+section > article > h3{
+    font-size: 150%;
+}
+body section article{
+
+}
+body>div>article>h2{
+    color: red;
+}
+body >div> article a:hover{
+    background-color: #836953;
+    text-decoration: none;
+    color: saddlebrown;
+}
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    background-color: #a7cece ;
+    color: #444444;
+    border-style: dotted;
+    border-color: white;
+    box-sizing: border-box;
+    background-image: url("../images/background.gif");
+    background-repeat: no-repeat;
+    padding-left : 75px;
+    background-position: top left;
+}
+
+body > div > section > article > ul > li:first-child {
+    font-weight: bold;
+}
+body > div > section > article > ul > li >span {
+    font-style: italic;
+    font-weight: normal;
+
+}
+footer{
+    clear: both;
+    font-size: 50%;
+    text-align: center;
+}
