@@ -4,6 +4,5 @@ const setup = () => {
     addEventListener('click', (e) => {
         pElement.innerHTML = 'Welkom!';
     })
-
 }
 window.addEventListener("load", setup);
