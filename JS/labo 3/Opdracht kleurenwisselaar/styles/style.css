@@ -1,0 +1,15 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.btn{
+    padding: 10px;
+    background-color: white;
+}
+.blue{
+    background-color: blue;
+    padding: 10px;
+}
+

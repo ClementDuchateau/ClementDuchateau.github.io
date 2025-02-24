@@ -1,0 +1,7 @@
+table, tbody, tr, td{
+    border: 1px solid black;
+}
+.width{
+    width: 10em;
+}
+
