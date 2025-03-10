@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Title</title>
+</head>
+<body>
+<fieldset>
+    <legend>Personal Information</legend>
+    <ul>
+        <li>
+            <label for="voorNaam" >First name* :</label>
+            <input type="text" id="voorNaam" placeholder="Your first name" autofocus>
+        </li>
+        <li>
+            <label for="achterNaam">Last name* :</label>
+            <input type="text" id="achterNaam" placeholder="Your last name">
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Sports</legend>
+    <p> Which sport do you train?</p>
+        <ul>
+            <li><input type="checkbox">Running</li>
+            <li><input type="checkbox">Swimming</li>
+            <li><input type="checkbox">Rowing</li>
+        </ul>
+</fieldset>
+<fieldset>
+    <legend>Gender</legend>
+    <ul>
+        <li> <input type="radio" name="gender">Male</li>
+        <li> <input type="radio" name="gender">Female</li>
+        <li> <input type="radio" name="gender">Other/ prefer not to say</li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Favorites</legend>
+    <ul>
+        <li> <label for="movie">Favorite movie: </label><input type="text" id="movie"></li>
+        <li><label for="quote">Favorite quote: </label><input type="text" id="quote" placeholder="Write your favorite quote"></li>
+        <li><label for="food">Favorite food: </label>
+            <select size="3" id="food">
+                <option>hotdog</option>
+                <option>hamburger</option>
+                <option>Pizza</option>
+                <option>sushi</option>
+                <option>fries</option>
+            </select>
+        </li>
+        <li>
+            <label for="flavor">Choose a flavor: </label>
+            <input id="flavor" list="flavors">
+            <datalist id="flavors">
+                <option>vanilla</option>
+                <option>chocolate</option>
+                <option>strawberry</option>
+                <option>melon</option>
+                <option>straciatella</option>
+            </datalist>
+        </li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Security &amp; Contact </legend>
+    <ul>
+        <li><label for="pass">Password*: </label><input id="pass" type="password"></li>
+        <li><label for="email">Email address: </label><input id="email" type="email" placeholder="Enter your email address"></li>
+        <li><label for="site">Favorite site: </label><input id="site" type="url" placeholder="Enter the url of your favorite site"></li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Additional Information</legend>
+    <ul>
+        <li><label for="nr10">Favorite number &#40;1-10&#41;: </label><input id="nr10" type="number" min="1" max="10"></li>
+        <li><label for="nr1000">Favorite number &#40;11-1000&#41;: </label><input id="nr1000" type="range" min="1" max="1000"></li>
+        <li><label for="age">When were you born? </label><input id="age" type="date"></li>
+        <li><label for="zip">Belgian zip code number*: </label><input id="zip" type="text" size="4" maxlength="4" pattern="^\d{4}" title="please use the correct format" placeholder="9999"></li>
+    </ul>
+</fieldset>
+<fieldset>
+    <legend>Miscellaneous</legend>
+    <ul>
+        <li><label for="search">Search for something: </label><input id="search" type="search"></li>
+        <li><label for="color">What is your favorite color? </label><input id="color" type="color"></li>
+        <li><label for="file">Upload a file: </label><input id="file" type="file"></li>
+    </ul>
+</fieldset>
+<input type="button" id="submit" value="submit">
+
+
+
+<script type="text/javascript" charset="utf-8" src="scripts/code.js"></script>
+</body>
+</html>
