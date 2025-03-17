@@ -7,6 +7,11 @@ const toonTrigrams = () =>{
     let txtInput = document.getElementById('txtInput').value;
     let lstTrigrams = document.getElementById('lstTrigrams');
     let trigrams = getTrigrams(txtInput);
+    trigrams.forEach(trigram => {
+        let li = document.createElement('li');
+        li.textContent = trigram;
+        lstTrigrams.appendChild(li);
+    })
     
 }
 
