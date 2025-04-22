@@ -34,7 +34,7 @@ const changeTarget = () => {
         target.style.top = y + 'px';
         target.src = global.IMAGE_PATH_PREFIX + Math.floor(Math.random() * global.IMAGE_COUNT ) + global.IMAGE_PATH_SUFFIX;
         if (target.src.endsWith("images/0.png")){
-            setTimeout(() => {
+            global.timeoutId = setTimeout(() => {
                 target.src = global.IMAGE_PATH_PREFIX + Math.floor(1+Math.random() * (global.IMAGE_COUNT-1) ) + global.IMAGE_PATH_SUFFIX
             }, 1000);
         }
@@ -47,6 +47,7 @@ const gameOver = () => {
     global.score = 0;
     changeScore()
     target.classList.add('hidden');
+    clearTimeout(global.timeoutId);
 }
 const scoreUp = () => {
 global.score++;
