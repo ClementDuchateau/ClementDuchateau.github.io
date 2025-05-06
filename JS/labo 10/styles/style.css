@@ -1,0 +1,57 @@
+
+body {
+    width: 60%;
+    margin: auto;
+}
+.twitter-card{
+    background-color: dodgerblue;
+    color: white;
+}
+.twitter-button {
+    color: white;
+    background-color: black;
+}
+.twitter-button:hover {
+    background-color: darkblue;
+}
+.youtube-card{
+    background-color: red;
+    color: white;
+}
+.youtube-button {
+    color: white;
+    background-color: black;
+}
+.youtube-button:hover {
+    background-color: darkred;
+}
+.google.card{
+    background-color: blue;
+    color: white;
+}
+.google-button {
+    color: white;
+    background-color: black;
+}
+.google-button:hover {
+    background-color: darkblue;
+}
+.instagram-card{
+    background-color: deeppink;
+    color: white;
+}
+.instagram-button {
+    color: white;
+    background-color: black;
+}
+.instagram-button:hover {
+    background-color: lightpink;
+}
+#btnsearch {
+    background-color: green;
+    width: 100%;
+}
+#txtInputBalk {
+    width: 100%;
+    margin-bottom: 5px;
+}
