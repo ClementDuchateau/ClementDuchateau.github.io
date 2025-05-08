@@ -16,16 +16,16 @@ const loadmovies =()=>{
       thumbs_up.addEventListener('click', () => {
           if (thumbs_up.classList.contains("likeColor")){
               thumbs_up.classList.remove("likeColor");
-              removeLike()
+              removeLike(movie.title)
           }else{
               if(thumbs_down.classList.contains("dislikeColor")){
                   thumbs_down.classList.remove(("dislikeColor"))
                   thumbs_up.classList.add("likeColor");
                   removeDislike()
-                  addLike()
+                  addLike(movie.title)
               }else{
                   thumbs_up.classList.add("likeColor");
-                  addLike()
+                  addLike(movie.title)
               }
           }
 
@@ -40,11 +40,11 @@ const loadmovies =()=>{
               if(thumbs_up.classList.contains("likeColor")){
                   thumbs_up.classList.remove("likeColor");
                   thumbs_down.classList.add("dislikeColor");
-                  removeLike()
-                  addDislike()
+                  removeLike(movie.title)
+                  addDislike(movie.title)
               }else{
                   thumbs_down.classList.add("dislikeColor");
-                  addDislike()
+                  addDislike(movie.title)
               }
           }
       })
@@ -82,30 +82,69 @@ const createElementWithClassNameAndText = (element, className,text ) => {
     e.appendChild(t);
     return e;
 }
+const createTrashCan = (movie) => {
+    let e = createElement("i");
+    e.classList.add("fas","fa-trash")
+    return e;
+
+}
 
 
-const addLike = () => {
+const addLike = (movie) => {
     let like = document.getElementById("like");
     let count = parseInt(like.textContent);
     like.innerText = count + 1;
+    addToLikeBar(movie)
 }
-const removeLike = () => {
+const removeLike = (movie) => {
     let like = document.getElementById("like");
     let count = parseInt(like.textContent);
     like.innerText = count - 1;
+    removeFromLikeBar(movie)
 
 }
-const addDislike = () => {
+const addDislike = (movie) => {
     let dislike = document.getElementById("dislike");
     let count = parseInt(dislike.textContent);
     dislike.innerText = count + 1;
+    removeFromLikeBar(movie)
 }
 const removeDislike = () => {
     let dislike = document.getElementById("dislike");
     let count = parseInt(dislike.textContent);
     dislike.innerText = count - 1;
 }
+const addToLikeBar = (movie) => {
+    let likeBar = document.getElementById("likebar");
+    let movieDiv = createElementWithClassName("div", "movie");
+    let title = createElementWithClassNameAndText("p", "title", movie);
+    let trashcan = createTrashCan(movie);
+    trashcan.addEventListener('click', () => {
+        removeFromLikeBar(movie)
+    });
+    likeBar.appendChild(movieDiv);
+    movieDiv.appendChild(title);
+    movieDiv.appendChild(trashcan);
+    if (likeBar.style.visibility === "hidden"){
+        likeBar.style.visibility = "visible";
+    }
+}
+const removeFromLikeBar = (movie) => {
+    let likeBar = document.getElementById("likebar");
+    let movies = likeBar.getElementsByClassName("movie");
 
+    for (let i = 0; i < movies.length; i++) {
+        let title = movies[i].querySelector(".title")
+        if (title.textContent === movie) {
+            likeBar.removeChild(movies[i]);
+            break;
+        }
+    }
+    if(likeBar.children.length <= 2){
+        likeBar.style.visibility = "hidden";
+    }
+
+}
 
 /*const createIconButton = (iconClass, buttonClass, onClick) => {
     const button = createElement("a", buttonClass);
