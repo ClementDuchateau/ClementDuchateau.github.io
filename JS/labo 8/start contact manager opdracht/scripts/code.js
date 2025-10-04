@@ -9,6 +9,29 @@ const bewaarBewerktePersoon = () => {
     valideer();
 
     // indien ok, bewaar de ingegeven data.
+    let elements = document.getElementsByClassName('invalid');
+    let lstpersonen = document.getElementById('lstPersonen');
+
+    if(elements.length === 0){
+        let persoon = {
+            Voornaam: document.getElementById("txtVoornaam").value,
+            Familienaam: document.getElementById("txtFamilienaam").value,
+            Geboortedatum: new Date(document.getElementById("txtGeboorteDatum").value),
+            email: document.getElementById("txtEmail").value,
+            kinderen: document.getElementById("txtAantalKinderen").value,
+
+        };
+        let persoonString = JSON.stringify(persoon);
+        console.log(persoonString);
+        let persoonOption = createOption(persoonString);
+        lstpersonen.appendChild(persoonOption);
+
+
+
+
+    }
+
+
         // een nieuw aangemaakte persoon voegen we toe
         // een bestaande persoon in de lijst passen we aan
 
@@ -17,15 +40,17 @@ const bewaarBewerktePersoon = () => {
 
 // Event listener (btnNieuw click)
 const bewerkNieuwePersoon = () => {
-    lstPersonen.selectedIndex = -1;
-    let inputElem = document.querySelectorAll('input[type=text]')
-    inputElem.forEach((el) => {
-        el.value ="";
-    })
-
+    console.log("Klik op de knop nieuw");
 
     // Zet de user interface klaar om de gegevens van een nieuwe persoon in te voeren
 };
+
+const createOption = (e) => {
+     let option = document.createElement("option");
+     let optiontext = document.createTextNode(e);
+     option.appendChild(optiontext);
+    return option;
+}
 
 
 // onze setup functie die de event listeners registreert

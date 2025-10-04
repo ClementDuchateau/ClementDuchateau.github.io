@@ -132,12 +132,24 @@ const addToLikeBar = (movie) => {
 const removeFromLikeBar = (movie) => {
     let likeBar = document.getElementById("likebar");
     let movies = likeBar.getElementsByClassName("movie");
+    let list = document.getElementById("movielist");
+    let movieList = list.getElementsByClassName("movie");
 
     for (let i = 0; i < movies.length; i++) {
         let title = movies[i].querySelector(".title")
         if (title.textContent === movie) {
             likeBar.removeChild(movies[i]);
             break;
+        }
+    }
+    for (let i = 0; i < movieList; i++) {
+        let title = movieList[i].querySelector(".title");
+        if (title.textContent === movie) {
+           let buttons=  movieList[i].querySelector(".buttons");
+           buttons[1].classList.remove("likeColor");
+
+
+
         }
     }
     if(likeBar.children.length <= 2){
